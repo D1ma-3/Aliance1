@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueBook.woff")format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+.mobile-menu {
+  display: none;
+}
+.container {
+  max-width: 120rem;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 5.875rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid rgba(235,235,240,0.2);
+  transition: background-color 0.2s, height 0.2s;
+}
+.navbar-light {
+  background-color:#fff;
+  color: #292d33;
+  height: 4.5rem;
+}
+.logo-swg {
+  width: 8.75rem;
+  height: 2.75rem;
+}
+.phone-icon {
+  fill: #5C8EE6;
+}
+.navbar-light .header-logo-path {
+  fill: #292D33;
+}
+.header {
+  padding: .125rem;
+  min-height: 100vh;
+}
+.header-image {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom .1875rem;
+  position: relative;
+  border-bottom: 1px solid rgba(235,235,240,0.2);
+}
+.header-image::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(41,45,51,0.75);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding: 0px 3.125rem;
+  border-right: 1px solid rgba(235,235,240,0.2);
+  height: 100%;
+}
+.header-nav {
+  flex-basis: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  padding-left: 3.1875rem;
+  margin: 0;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 3.125rem;
+}
+.header-nav-limk {
+  text-decoration: none;
+  font-size: 1rem; 
+  color: inherit;
+}
+.header-phone {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  margin-right: 3.125rem;
+}
+.header-phone-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: inherit;
+}
+.button {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #ffffff;
+  background: #3A71D1;
+  padding: 1.5625rem 3.75rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar-button {
+  flex-shrink: 0;
+  height: 100%;
+  padding: 1.5625rem 2.5rem;
+}
+.navbar-button .button-icon {
+  display: none;
+}
+.header-button {
+  height: 100%;
+  padding: 1.625rem 3.75rem;
+}
+.seporator {
+  background: #5c8ee6;
+  width: 9.375rem;
+  height: 2px; 
+}
+.header-content {
+  padding-top: 9.375rem;
+  position: relative;
+  z-index: 1;
+  color:#fff;
+}
+.header-title {
+  max-width: 67.5rem;
+  font-family: "Bebas Neue";
+  font-size: 5rem;
+  line-height: 120%;
+  margin: 1.5rem 0;
+  word-spacing: -1.6px;
+  letter-spacing: 0.9px;
+}
+.header-text {
+  max-width: 45rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 3.125rem;
+}
+.header-features {
+  display: flex;
+  min-height: 10.5rem;
+  padding: 0;
+  margin-top: 6.25rem;
+  list-style: none;
+  color: #fff;
+  position: relative;
+}
+.header-features-item {
+  padding: 1.875rem 3.125rem;
+  width: 18rem;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+}
+.header-features-text{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-bottom: 0;
+  margin-top: 1.125rem;
+}
+.header-features-item:not(:last-child) {
+  border-right: none;
+}
+.section {
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
+}
+.section-title {
+  color: #292D33;
+  font-family: "Bebas Neue";
+  font-size: 3.75rem;
+  line-height: 120%;
+}
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 1.875rem;
+}
+.steps-item {
+  max-width: 20.625rem;
+}
+.steps-num {
+  color: #5C8EE5;
+  font-family: "Bebas Neue";
+  font-size: 3rem;
+  line-height: 120%;
+  align-items: center; 
+  display: flex;
+}
+.steps-num::after {
+  content: "";
+  height: 1px;
+  background: #EBEBF0;
+  width: 100%;
+  margin-left: 1.875rem;
+}
+.steps-title {
+  color: #292D33;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 1.875rem;
+  margin-bottom: .625rem;
+}
+.steps-text {
+  color: #828A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: .625rem;
+  margin-bottom: 1.25rem;
+}
+.steps-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5C8EE5;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+}
+.steps-link:before {
+  content: "";
+  background: #5C8EE5;
+  height: 1px;
+  width: 40px;
+  max-width: 30px;
+}
+@media (max-width: 1712px) {
+  html {
+    font-size: 14px;
+  }
+  .header-image {
+    background-position: center;
+  }
+}
+@media (max-width: 1517px) {
+  html {
+    font-size: 13px;
+  }
+  .header-logo2 {
+    padding: 3rem;
+  }
+  .logo2-swg {
+    max-width: 2rem;
+  }
+  .header-nav {
+    padding-left: 2rem;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .header-phone {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 1275px) {
+  .container {
+    max-width: 65rem;
+  }
+  .header-phone {
+    display: none;
+  }
+  .navbar {
+    height: 5rem;
+  }
+  .navbar-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}  
+@media (max-width: 1115px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 55rem;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-logo {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .mobile-menu-toggle {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.8rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+  }
+  .navbar-light .mobile-menu-line {
+    background-color: #333;
+  }
+  .mobile-menu-line {
+    height: 1px;
+    background-color:#fff;
+    width: 100%;
+  }
+  .mobile-menu-line:nth-child(2){
+    width: 80%;
+  }
+  .navbar-button .button-text {
+    display: none;
+  }
+  .navbar-button .button-icon {
+    display: block;
+    fill: #ffffff;
+  }
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2;
+    background-color: #fff;
+    padding-top: 5rem;
+  }
+  .mobile-menu.is-open {
+    display: block;
+  }
+}
