@@ -292,7 +292,7 @@ body {
 }  
 @media (max-width: 1115px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   .container {
     max-width: 55rem;
@@ -320,6 +320,7 @@ body {
     height: 1px;
     background-color:#fff;
     width: 100%;
+    transition: transform 0.2s;
   }
   .mobile-menu-line:nth-child(2){
     width: 80%;
@@ -415,5 +416,14 @@ body {
     align-items: center;
     gap: .625rem;
     margin-right: 3.125rem;
+  }
+  .close-menu .mobile-menu-line:nth-child(2) {
+    display: none;
+  }
+  .close-menu .mobile-menu-line:nth-child(1) {
+    transform: rotate(45deg) translateY(9px);
+  }
+  .close-menu .mobile-menu-line:nth-child(3) {
+    transform: rotate(-45deg) translateX(-9px);
   }
 }
