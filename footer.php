@@ -143,15 +143,15 @@
         <p class="modal-text">
           Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
         </p>
-        <form action="#" class="modal-form">
+        <form action="handler.php" method="POST" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
-              <input id="user-n" type="text" class="modal-input" placeholder=" ">
+              <input id="user-n" type="text" class="modal-input" name="username" placeholder=" ">
               <label class="input-group-label modal-input-label" for="user-45">Имя</label>
             </div>
             <!-- /.input-group -->
             <div class="input-group modal-input-group">
-              <input id="user-p" type="tel" class="modal-input" placeholder=" ">
+              <input id="user-p" type="tel" class="modal-input" name="userphone" placeholder=" ">
               <label class="input-group-label modal-input-label" for="user-46">Номер телефона</label>
             </div>
             <!-- /.input-group -->
@@ -172,6 +172,7 @@
       </div>
     </div>
     <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
