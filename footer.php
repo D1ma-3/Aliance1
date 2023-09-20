@@ -7,12 +7,12 @@
             <p class="cta-from-tex">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
             <div class="input-group-wrapper">
             <div class="input-group">
-              <input id="user-n" type="text" name='user-name' class="input" placeholder=" " maxlength="100" required>
+              <input id="user-n" type="text" name="username" class="input" placeholder=" " maxlength="100" required>
               <label class="input-group-label" for="user-n">Имя</label>
             </div>
             <!-- /.input-group -->
             <div class="input-group">
-              <input id="user-p" type="tel" name='user-phone' class="input" placeholder=" " maxlength="30" required>
+              <input id="user-p" type="tel" name="userphone" class="input" placeholder=" " maxlength="30" required>
               <label class="input-group-label" for="user-p">Номер телефона</label>
             </div>
             <!-- /.input-group -->
@@ -146,12 +146,12 @@
         <form action="handler.php" method="POST" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
-              <input id="user-n" type="text" class="modal-input" name="username" placeholder=" ">
+              <input id="user-n" type="text" class="input modal-input" name="username" placeholder=" ">
               <label class="input-group-label modal-input-label" for="user-45">Имя</label>
             </div>
             <!-- /.input-group -->
             <div class="input-group modal-input-group">
-              <input id="user-p" type="tel" class="modal-input" name="userphone" placeholder=" ">
+              <input id="user-p" type="tel" class="input modal-input" name="userphone" placeholder=" ">
               <label class="input-group-label modal-input-label" for="user-46">Номер телефона</label>
             </div>
             <!-- /.input-group -->
