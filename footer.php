@@ -12,7 +12,7 @@
             </div>
             <!-- /.input-group -->
             <div class="input-group">
-              <input id="user-p" type="tel" name="userphone" class="input" placeholder=" " maxlength="30" required>
+              <input id="user-p" type="tel" name="userphone" class="input phone-mask" placeholder=" " maxlength="30" required>
               <label class="input-group-label" for="user-p">Номер телефона</label>
             </div>
             <!-- /.input-group -->
@@ -132,10 +132,10 @@
       </div>
       <!-- /.container -->
     </footer>
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal-dilog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="close-icon" width="24" height="24">
             <use href="img/sprite.svg#39"></use>
           </svg>
@@ -169,6 +169,19 @@
           </form>
         </div>
         </form>
+      </div>
+    </div>
+    <div class="modal" id="alert-modal">
+      <div class="modal-dilog">
+        <h2 class="modal-title">Спасибо!</h2>
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+          <svg class="close-icon" width="24" height="24">
+            <use href="img/sprite.svg#39"></use>
+          </svg>
+        </a>
+        <p class="modal-text">
+          Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
       </div>
     </div>
     <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
