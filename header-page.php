@@ -84,7 +84,7 @@
       <li class="header-nav-item">
         <a href="./contracts.php" class="header-nav-limk"><?=$page_title ?></a></li>
       <li class="header-nav-item">
-        <a href="#" class="header-nav-limk">Собственные торговые марки</a></li>
+        <a href="./trademarks.php" class="header-nav-limk">Собственные торговые марки</a></li>
       <li class="header-nav-item">
         <a href="#" class="header-nav-limk">Новости</a></li>
       <li class="header-nav-item">
@@ -107,7 +107,7 @@
     </button>
   </nav>
   <!-- /.navbar -->
-  <header class="page-header page-header-bg-image">
+  <header class="page-header <?= $header_style;?>">
   <!-- <img src="img/thumb.png" alt="" class="page-header-thumb" /> -->
   <div class="container">
     <div class="seporator"></div>
