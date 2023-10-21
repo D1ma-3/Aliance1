@@ -281,8 +281,12 @@
       </div>
     </section>
     <?php $block_title = "Собственные торговые марки"; include_once('./template-parts/trademarks-block.php')?>
-    <section class="section founder">
-      <img src="img/founder.jpg" alt="founder" class="founder-photo" />
+    <section class="section founder section founder">
+      <picture class="founder-photo">
+        <source type="image/webp" srcset="iimg/founder.webp">
+        <source type="image/jpeg" srcset="img/founder.jpg"> 
+        <img src="img/founder.jpg" alt="founder">
+      </picture>
       <div class="container">
       <div class="founder-content-wrapper">
         <div class="founder-content">
